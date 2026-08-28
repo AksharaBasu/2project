@@ -1,0 +1,19 @@
+body{ background-color:plum !important; }
+h1{color :rgb(206, 130, 38) !important; font-size: 50px; }
+.container { background-color: rgb(233, 239, 244); width: 85%; margin:  auto; padding: 25px; border-radius: 10px; }
+
+h1,h2{text-align: center;}
+
+form{gap: 10px; margin-bottom: 30px; display:flex ;}
+
+input{flex: 1 ; padding: 10px;}
+
+button{background-color: rgb(151, 226, 151); cursor: pointer; color: white; border-radius: 10px; border: none; padding: 10px 15px;}
+
+button:hover{background-color: green; opacity: 0.8;}
+
+th,td{padding: 12px; text-align: center;border: 2px solid gray;}
+
+table{width: 100%; border-collapse ;}
+
+th{background-color: blueviolet;}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT MANAGEMENT SYSTEM</title>
+    {% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+
+</head>
+<body>
+    <div class="container">
+    <h1>STUDENT MANAGEMENT SYSTEM</h1>
+    <form action="studentform">
+    <input type="text" id="name" placeholder="enter name" required>
+    <input type="email" id="email" placeholder="enter email" required>
+    <input type="text" id="course" placeholder="enter course" required>
+    <input type="text" id="city" placeholder="enter city" required>
+
+    <button type="submit">ADD STUDENT</button>
+</form>
+
+    <h2>STUDENTS LIST</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Course</th>
+                <th>City</th>
+                <th>Action</th>
+                </tr>
+    </thead>
+     <tbody id="studentList"></tbody>
+    </table>
+</div>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
