@@ -17,3 +17,7 @@ th,td{padding: 12px; text-align: center;border: 2px solid gray;}
 table{width: 100%; border-collapse ;}
 
 th{background-color: blueviolet;}
+
+.delete{background-color: pink; cursor: pointer; color: white; border-radius: 10px; border: none; padding: 10px 15px;}
+
+.delete:hover{background-color: red; opacity: 0.8;}

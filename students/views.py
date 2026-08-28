@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from .models import Student
+from django.views.decorators.csrf import csrf_exempt
 import json
 
 def home(request):
@@ -18,6 +19,7 @@ def get_students(request):
         })
     return JsonResponse(data,safe=False)
 
+@csrf_exempt
 def add_student(request):
     if request.method == "POST":
         data = json.loads(request.body)
@@ -28,6 +30,7 @@ def add_student(request):
         )
         return JsonResponse({ "message":"Student added successfully!"})
 
+@csrf_exempt
 def delete_student(request):
     if request.method == "DELECT":
         student = Student.objects.get( id=id)
